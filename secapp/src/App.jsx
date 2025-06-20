@@ -12,6 +12,7 @@ import GetPro from "./getpro.jsx"
 import Navbar from "./navbar.jsx"
 import Login from "./login.jsx"
 import Register from "./register.jsx"
+
 import BESTSELLERS from "./bestsellers.jsx"
 import NEWARRIVALS from "./newarrivals"
 import BESTREVIEWED from "./bestreviewed" 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/navbar" element={<Navbar></Navbar>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/register" element={<Register></Register>}></Route>
+          
           <Route path="/bestsellers" element={<BESTSELLERS></BESTSELLERS>}></Route>
           <Route path="/newarrivals" element={<NEWARRIVALS></NEWARRIVALS>}></Route>
           <Route path="/bestreviwed" element={<BESTREVIEWED></BESTREVIEWED>}></Route>

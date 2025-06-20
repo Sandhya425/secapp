@@ -5,8 +5,7 @@ import { CiGift } from "react-icons/ci";
 const Home = () => {
     return (
         <>
-            <img id="img1" width="1489px" height="600px" src="https://ae01.alicdn.com/kf/HTB1T_LupbZnBKNjSZFKq6AGOVXaL/Luxury-Handbags-Women-Bags-Designer-Genuine-Leather-Handbags-Sac-A-Main-Women-Shoulder-Crossbody-Messenger-Bag.jpg" alt="" srcset="" />
-
+            <img id="img1" width="100%" height="100%" src="https://ae01.alicdn.com/kf/HTB1T_LupbZnBKNjSZFKq6AGOVXaL/Luxury-Handbags-Women-Bags-Designer-Genuine-Leather-Handbags-Sac-A-Main-Women-Shoulder-Crossbody-Messenger-Bag.jpg" />
             <div id="t">Timeless</div>
             <div id="e">Elequance</div>
             <div id="l">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi maxime odit libero soluta natus reprehenderit exercitationem, veritatis sequi eius assumenda consequuntur eaque quo. Numquam mollitia repellendus maiores eum a neque.</div>
@@ -17,22 +16,22 @@ const Home = () => {
                 <article>
                     <div id="i"><FaShoppingBag /></div>
                     <div id="g">100% Genuine Leather</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repellat!</div>
+                    <div id="l1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, repellat!</div>
                 </article>
                 <article>
                     <div id="i"><FaRegCommentDots /></div>
                     <div id="g">Minimalist</div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, labore.</div>
+                    <div id="l1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, labore.</div>
                 </article>
                 <article>
                     <div id="i"><FaShippingFast /></div>
                     <div id="g">Easy Returns</div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, labore.</div>
+                    <div id="l1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, labore.</div>
                 </article>
                 <article>
                     <div id="i"><CiGift /></div>
                     <div id="g">Ethically Crafted</div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, labore.</div>
+                    <div id="l1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, labore.</div>
                 </article>
             </section>
 
@@ -44,7 +43,7 @@ const Home = () => {
                 </article>
                 <article className="ar2">
                     <img id="m" width="450px" height="530px" src="https://cdn.shopify.com/s/files/1/2556/2250/products/product-image-701661257.jpg?v=1567696138" />
-                    <div>FOR WOMEN</div>
+                    <div id="forr">FOR WOMEN</div>
                     <div><button id="s">Shop Now</button></div>
                 </article>
                 <article>
@@ -124,27 +123,34 @@ const Home = () => {
 
 
             <div id="bl">Read Blog Post</div>
-            <section>
+            <section className="sec4">
                 <article>
-                    <div><img width="470px" height="300px" src="https://demo.templatesjungle.com/leo/images/post-image1.jpg" /></div>
-                    <div>FASHION JUL 12,2025</div>
-                    <div>HOW TO LOOK OUTSTANDING IN PASTEL</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias voluptas amet provident necessitatibus? Soluta dolores alias tempore quam vero!</div>
+                    <div><img id="ph" width="470px" height="300px" src="https://demo.templatesjungle.com/leo/images/post-image1.jpg" /></div>
+                    <div id="fash">FASHION JUL 12,2025</div>
+                    <div id="how">HOW TO LOOK OUTSTANDING IN PASTEL</div>
+                    <div id="l1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem alias voluptas amet provident necessitatibus? Soluta dolores alias tempore quam vero!</div>
+                </article>
+                <article className="ti">
+                    <div><img  id="ph"width="470px" height="300px" src="https://demo.templatesjungle.com/leo/images/post-image2.jpg"/></div>
+                    <div id="fash">FASHION JUL 12,2025</div>
+                    <div id="how">TOP 10 FESHION TREND FOR SUMMER</div>
+                    <div id="l1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam repellat fugiat amet officia velit laudantium quidem voluptas voluptatem deleniti debitis.</div>
                 </article>
                 <article>
-                    <div><img width="470px" height="300px" src="https://demo.templatesjungle.com/leo/images/post-image2.jpg"/></div>
-                    <div>FASHION JUL 12,2025</div>
-                    <div>TOP 10 FESHION TREND FOR SUMMER</div>
-                    <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam repellat fugiat amet officia velit laudantium quidem voluptas voluptatem deleniti debitis.</div>
-                </article>
-                <article>
-                    <div><img  width="470px" height="300px" src="https://demo.templatesjungle.com/leo/images/post-image3.jpg"  /></div>
-                    <div>FASHION JUL 12,2025</div>
-                    <div>CRAZY FASHION WITH UNIQUE MOMENT</div>
-                    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ad error consectetur voluptatum at, culpa repellat nihil? Aliquid, soluta totam!</div>
+                    <div><img  id="ph" width="470px" height="300px" src="https://demo.templatesjungle.com/leo/images/post-image3.jpg"  /></div>
+                    <div id="fash">FASHION JUL 12,2025</div>
+                    <div id="how">CRAZY FASHION WITH UNIQUE MOMENT</div>
+                    <div id="l1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ad error consectetur voluptatum at, culpa repellat nihil? Aliquid, soluta totam!</div>
                 </article>
             </section>
+            
 
+
+            <section>
+              <img className="bag" width="100%" height="800px"src="https://cdn.shopify.com/s/files/1/2726/4990/products/von-baer-weekender-womens-leather-weekend-bag-solid-brown-side-view_2048x2048.jpg?v=1680000053"/>
+             <div id="up">SIGN UP FOR OUR NEWSLETTER</div>
+             <input type="text" placeholder="enter name" />
+             </section>     
         </>
     )
 
