@@ -1,7 +1,7 @@
 const BESTREVIEWED=()=>{
 return(
     <>
-    best REVIEW
+    best REVIEWjojii
     </>
 )
 }

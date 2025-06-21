@@ -2,6 +2,7 @@ import { FaShoppingBag } from "react-icons/fa";
 import { FaRegCommentDots } from "react-icons/fa6";
 import { FaShippingFast } from "react-icons/fa";
 import { CiGift } from "react-icons/ci";
+import {Link,Outlet} from "react-router-dom"
 const Home = () => {
     return (
         <>
@@ -36,8 +37,8 @@ const Home = () => {
             </section>
 
             <section className="sec2">
-                <article >
-                    <img id="m" width="450px" height="530px" src="https://img.ltwebstatic.com/images3_spmp/2023/06/08/16862070865eb3a7a171d9611426a27217d0cca51b_thumbnail_900x.jpg" />
+                 <article className="ar1" >
+                    {/* <img id="m" width="450px" height="530px" src="https://img.ltwebstatic.com/images3_spmp/2023/06/08/16862070865eb3a7a171d9611426a27217d0cca51b_thumbnail_900x.jpg" />  */}
                     <div id="for">TRENDY FOR GIRLS</div>
                     <div><button id="s">Shop Now</button></div>
                 </article>
@@ -59,18 +60,15 @@ const Home = () => {
                 <div id="h">Handmade leather bags for any occations</div>
             </article>
 
-            {/* <article>
-                <div><Link to="/bestseller">BEST SELLERS</Link></div>
-                <div><Link to="/newarrivals">NEW ARRIVALS</Link></div>
-                <div><Link to="/bestreviewed">BEST REVIEWED</Link></div>
-               </article> */}
-
-
             <article className="new">
-                <div>BEST SELLERS</div>
-                <div id="l">NEW ARRIVALS</div>
-                <div>BEST REVIEWED</div>
+                <div><Link to="/bestsellers">BEST SELLERS</Link></div>
+                <div id="l"><Link to="/newarrivals">NEW ARRIVALS</Link></div>
+                <div><Link to="/bestreviewed">BEST REVIEWED</Link></div>
+                <Outlet></Outlet>
             </article>
+
+
+          
 
 
             <section className="sec3">
@@ -146,11 +144,22 @@ const Home = () => {
             
 
 
-            <section>
-              <img className="bag" width="100%" height="800px"src="https://cdn.shopify.com/s/files/1/2726/4990/products/von-baer-weekender-womens-leather-weekend-bag-solid-brown-side-view_2048x2048.jpg?v=1680000053"/>
-             <div id="up">SIGN UP FOR OUR NEWSLETTER</div>
-             <input type="text" placeholder="enter name" />
-             </section>     
+            <section className="sec5">
+              <div>
+             <div id="our">SIGN UP FOR OUR NEWSLETTER</div>
+             <input id="name" type="text" placeholder="Enter your name" /><br></br>
+              <input id="email" type="text" placeholder="Enter Your Email Address" /><br></br>
+              <button id="sign">SIGN UP</button>
+              </div>
+             </section>  
+            
+              
+                <div id="fo">Follow us on Instagram</div>
+             <section className="sec6">
+           <Link to="https://templatesjungle.com/demo/?url=https://demo.templatesjungle.com/leo/&purl=https://templatesjungle.gumroad.com/l/leo-leathers-html-template"><img src="https://demo.templatesjungle.com/leo/images/insta-item1.jpg"width="470px" /></Link>
+             <Link to="https://www.instagram.com/templatesjungle/"><img src="https://demo.templatesjungle.com/leo/images/insta-item2.jpg"width="470px" /></Link> 
+                <Link to="https://www.instagram.com/templatesjungle/"><img src="https://demo.templatesjungle.com/leo/images/insta-item3.jpg"width="470px" /></Link>
+                </section>
         </>
     )
 
